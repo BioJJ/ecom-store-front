@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare && husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "@types/node": "^18",
+    "devmoji": "^2.3.0",
+    "eslint": "^8.38.0",
+    "husky": "^8.0.3",
+    "nuxt": "^3.4.1",
+    "prettier": "^2.8.7"
+  }
+}
