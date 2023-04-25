@@ -12,17 +12,29 @@
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
     "@element-plus/nuxt": "^1.0.4",
+    "@iconify-json/bx": "^1.1.6",
+    "@iconify-json/bxl": "^1.1.6",
+    "@iconify-json/bxs": "^1.1.6",
+    "@iconify-json/carbon": "^1.1.16",
+    "@nuxtjs/google-fonts": "^3.0.0",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@types/node": "^18",
+    "@unocss/nuxt": "^0.51.8",
     "devmoji": "^2.3.0",
     "eslint": "^8.38.0",
     "husky": "^8.0.3",
     "nuxt": "^3.4.1",
-    "prettier": "^2.8.7"
+    "nuxt-icon": "^0.4.0",
+    "prettier": "^2.8.7",
+    "sass": "^1.62.0"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "@nuxtjs/tailwindcss": "^6.6.6",
     "@pinia/nuxt": "^0.4.8",
     "element-plus": "^2.3.3",
-    "pinia": "^2.0.34"
+    "pinia": "^2.0.34",
+    "swiper": "^9.2.4"
   },
   "overrides": {
     "vue": "latest"
