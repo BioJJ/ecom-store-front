@@ -1,11 +1,7 @@
 <template>
-	<div
-		class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal"
-	>
-		<Slider />
+	<Slider />
 
-		<Products />
+	<Products />
 
-		<About />
-	</div>
+	<About />
 </template>
