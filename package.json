@@ -24,7 +24,7 @@
     "eslint": "^8.38.0",
     "husky": "^8.0.3",
     "nuxt": "^3.4.1",
-    "nuxt-icon": "^0.4.0",
+    "nuxt-icons": "^3.2.1",
     "prettier": "^2.8.7",
     "sass": "^1.62.0"
   },
@@ -33,6 +33,7 @@
     "@nuxtjs/tailwindcss": "^6.6.6",
     "@pinia/nuxt": "^0.4.8",
     "element-plus": "^2.3.3",
+    "nuxt-swiper": "^1.1.0",
     "pinia": "^2.0.34",
     "swiper": "^9.2.4"
   },

@@ -34,13 +34,17 @@ export default defineNuxtConfig({
 		}
 	},
 	srcDir: './src',
+	build: {
+		transpile: ['swiper']
+	},
 	modules: [
 		'@element-plus/nuxt',
 		'@nuxtjs/google-fonts',
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
-		'nuxt-icon',
-		'@unocss/nuxt'
+		'nuxt-icons',
+		'@unocss/nuxt',
+		'nuxt-swiper'
 	],
 	googleFonts: {
 		families: {
