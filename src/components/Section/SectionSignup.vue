@@ -56,24 +56,6 @@
 						Sign Up
 					</button>
 				</form>
-
-				<!-- <div class="flex items-center gap-2">
-          <div class="h-0.5 grow bg-gray-200" />
-          <p class="font-medium">Or continue with</p>
-          <div class="h-0.5 grow bg-gray-200" />
-        </div>
-
-        <div class="flex items-center justify-center gap-4">
-          <button class="rounded-full bg-green-200 p-2 text-white">
-            <span class="text-2xl" i-bxl-facebook />
-          </button>
-          <button class="rounded-full bg-green-200 p-2 text-white">
-            <span class="text-2xl" i-bxl-google />
-          </button>
-          <button class="rounded-full bg-green-200 p-2 text-white">
-            <span class="text-2xl" i-bxl-twitter />
-          </button>
-        </div> -->
 			</div>
 		</div>
 	</section>

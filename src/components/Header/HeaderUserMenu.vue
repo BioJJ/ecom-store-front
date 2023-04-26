@@ -1,20 +1,3 @@
-<script setup>
-defineProps({
-	isMenuVisible: { type: Boolean, required: true }
-})
-
-const isNavVisible = inject('isNavVisible')
-const closeMenu = () => {
-	isNavVisible.value = false
-}
-
-const logout = () => {
-	// const { logout } = useStrapiAuth();
-	logout()
-	closeMenu()
-}
-</script>
-
 <template>
 	<ul class="user-menu" :class="{ 'user-menu--visible': isMenuVisible }">
 		<li>
@@ -40,6 +23,23 @@ const logout = () => {
 		</li>
 	</ul>
 </template>
+
+<script setup>
+defineProps({
+	isMenuVisible: { type: Boolean, required: true }
+})
+
+const isNavVisible = inject('isNavVisible')
+const closeMenu = () => {
+	isNavVisible.value = false
+}
+
+const logout = () => {
+	// const { logout } = useStrapiAuth();
+	logout()
+	closeMenu()
+}
+</script>
 
 <style scoped lang="scss">
 .user-menu {

@@ -53,42 +53,6 @@
 						Login
 					</button>
 				</form>
-				<!--
-				<div class="flex items-center gap-2">
-					<div class="h-0.5 grow bg-gray-200" />
-					<p class="font-medium">Or continue with</p>
-					<div class="h-0.5 grow bg-gray-200" />
-				</div>
-
-			 <div class="flex items-center justify-center gap-4">
-					<button
-						class="rounded-full bg-green-200 p-2 text-white"
-						@click="isModalVisible = true"
-					>
-						<span class="text-2xl" i-bxl-facebook />
-					</button>
-					<button
-						class="rounded-full bg-green-200 p-2 text-white"
-						@click="isModalVisible = true"
-					>
-						<span class="text-2xl" i-bxl-google />
-					</button>
-					<button
-						class="rounded-full bg-green-200 p-2 text-white"
-						@click="isModalVisible = true"
-					>
-						<span class="text-2xl" i-bxl-twitter />
-					</button>
-
-					<BaseModal v-model:is-modal-visible="isModalVisible">
-						<p class="app-text-lg text-green-200">
-							This feature is coming soon!
-						</p>
-						<p class="text-sm font-medium text-gray-200">
-							We're working everyday to enhance your experience as client.
-						</p>
-					</BaseModal>
-				</div> -->
 			</div>
 		</div>
 	</section>

@@ -1,6 +1,5 @@
 <template>
 	<NuxtLink to="/" class="flex items-center gap-2" data-testid="logo">
-		<!-- <NuxtIcon name="Logo" fill class="text-4xl" /> -->
 		<svg
 			class="fill-current text-gray-800 mr-2"
 			xmlns="http://www.w3.org/2000/svg"
