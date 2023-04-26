@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply overflow-x-hidden scroll-smooth font-quicksand font-normal text-blue-200;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1 {
+    @apply text-[56px] font-bold leading-none;
+  }
+
+  h2 {
+    @apply text-[28px] font-semibold leading-none  lg:text-[32px];
+  }
+
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+
+  button {
+    @apply outline-none;
+  }
+}
+
+@layer components {
+  .app {
+    &-section {
+      @apply py-8;
+    }
+
+    &-button {
+      @apply flex items-center gap-2 rounded bg-green-200 py-2 px-4 font-semibold text-white hover:opacity-90 text-center;
+
+      span {
+        @apply text-2xl;
+      }
+    }
+
+    &-text-lg {
+      @apply text-lg font-semibold;
+    }
+  }
+}
+
+span.nuxt-icon svg {
+  @apply m-0;
+}
