@@ -6,49 +6,32 @@ const props = defineProps({
 		default: () => {}
 	}
 })
-// const productData = {
-//   id: props.product.id,
-//   name: props.product.attributes.Name,
-//   brand: props.product.attributes.Brand,
-//   priceCurrent: `${props.product.attributes.Price_Current} ${props.product.attributes.Price_Currency}`,
-//   priceOriginal: `${props.product.attributes.Price_Original} ${props.product.attributes.Price_Currency}`,
-//   isSaving: props.product.attributes.Price_Original,
-//   savingValue: () => {
-//     if (!props.product.attributes.Price_Original) return null;
-
-//     const saving =
-//       100 -
-//       Math.round(
-//         (props.product.attributes.Price_Current /
-//           props.product.attributes.Price_Original) *
-//           100
-//       );
-//     return saving + '%';
-//   },
-//   img: () => {
-//     return props.product.attributes.Image.data
-//       ? props.product.attributes.Image.data[0].attributes.url
-//       : 'https://res.cloudinary.com/cloud-m98/image/upload/v1659123319/Groceyish/Image_Placeholder.webp';
-//   },
-// };
-
 const productData = {
-	id: 32,
-	name: 'Automatic Powder Lavender Scent Multicolour - 2.5 Kg',
-	brand: 'Tide',
-	priceCurrent: 80.8,
-	priceOriginal: 96,
-	isSaving: 96,
+	id: props.product.id,
+	name: props.product.attributes.Name,
+	brand: props.product.attributes.Brand,
+	priceCurrent: `${props.product.attributes.Price_Current} ${props.product.attributes.Price_Currency}`,
+	priceOriginal: `${props.product.attributes.Price_Original} ${props.product.attributes.Price_Currency}`,
+	isSaving: props.product.attributes.Price_Original,
 	savingValue: () => {
-		// if (!props.product.attributes.Price_Original) return null
+		if (!props.product.attributes.Price_Original) return null
 
-		const saving = 100 - Math.round((80 / 96) * 100)
+		const saving =
+			100 -
+			Math.round(
+				(props.product.attributes.Price_Current /
+					props.product.attributes.Price_Original) *
+					100
+			)
 		return saving + '%'
 	},
 	img: () => {
-		return 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117789/Groceyish/Strapi/small_N52757572_A_4_45e32a2edf_dab3664874.webp'
+		return props.product.attributes.Image.data
+			? props.product.attributes.Image.data[0].attributes.url
+			: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659123319/Groceyish/Image_Placeholder.webp'
 	}
 }
+
 const emit = defineEmits(['update:product'])
 
 // Store
