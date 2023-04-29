@@ -9,22 +9,25 @@ const props = defineProps({
 </script>
 
 <template>
-	<NuxtLink :to="`/categories/${props.category.id}`" class="category-card">
+	<NuxtLink :to="`/categories/${props.category._id}`" class="category-card">
 		<img
-			:src="props.category?.attributes?.Image?.data?.attributes?.url"
-			:alt="props.category.attributes.Name"
+			:src="props.category?.image"
+			:alt="props.category.name"
 			class="category-img"
 		/>
-
-		<p class="app-text-lg text-center">{{ props.category.attributes.Name }}</p>
+		<p class="app-text-lg text-center">{{ props.category.name }}</p>
 
 		<span class="text-sm text-gray-200">
-			{{ props.category.attributes.Products.data.length }}
-			{{
+			<!--todo: verificar retorno dos produtos na categoria -->
+			<!-- {{ props.category.attributes.Products.data.length }} -->
+			{{ props.category.length }}
+			<!-- {{
 				`${
 					props.category.attributes.Products.data.length > 1 ? 'Items' : 'Item'
 				}`
-			}}
+			}} -->
+
+			{{ `${props.category.length > 1 ? 'Items' : 'Item'}` }}
 		</span>
 	</NuxtLink>
 </template>
