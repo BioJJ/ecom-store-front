@@ -7,27 +7,22 @@ const props = defineProps({
 	}
 })
 const productData = {
-	id: props.product.id,
-	name: props.product.attributes.Name,
-	brand: props.product.attributes.Brand,
-	priceCurrent: `${props.product.attributes.Price_Current} ${props.product.attributes.Price_Currency}`,
-	priceOriginal: `${props.product.attributes.Price_Original} ${props.product.attributes.Price_Currency}`,
-	isSaving: props.product.attributes.Price_Original,
+	id: props.product._id,
+	name: props.product.name,
+	brand: props.product.name,
+	priceCurrent: `${props.product.price} `,
+	priceOriginal: `${props.product.price} `,
+	isSaving: props.product.price,
 	savingValue: () => {
-		if (!props.product.attributes.Price_Original) return null
+		if (!props.product.price) return null
 
 		const saving =
-			100 -
-			Math.round(
-				(props.product.attributes.Price_Current /
-					props.product.attributes.Price_Original) *
-					100
-			)
+			100 - Math.round((props.product.price / props.product.price) * 100)
 		return saving + '%'
 	},
 	img: () => {
-		return props.product.attributes.Image.data
-			? props.product.attributes.Image.data[0].attributes.url
+		return props.product.image
+			? props.product.image
 			: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659123319/Groceyish/Image_Placeholder.webp'
 	}
 }

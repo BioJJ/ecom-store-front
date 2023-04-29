@@ -6,38 +6,34 @@ const props = defineProps({
 		default: () => {}
 	}
 })
+
 const productData = {
-	name: props.product.attributes.Name,
-	brand: props.product.attributes.Brand,
-	category: props.product.attributes.Category.data.attributes.Name,
-	priceCurrent: `${props.product.attributes.Price_Current} ${props.product.attributes.Price_Currency}`,
-	priceOriginal: `${props.product.attributes.Price_Original} ${props.product.attributes.Price_Currency}`,
-	ratingValue: props.product.attributes.Rating_Value,
-	ratingCount: props.product.attributes.Rating_Users,
-	isBestDeal: props.product.attributes.isBestDeal,
-	isSaving: props.product.attributes.Price_Original,
+	name: props.product.name,
+	brand: props.product.name,
+	category: props.product.category.name,
+	priceCurrent: `${props.product.price} `,
+	priceOriginal: `${props.product.price} `,
+	ratingValue: props.product.price / 100,
+	ratingCount: props.product.price / 5,
+	isBestDeal: true,
+	isSaving: props.product.price,
 	savingValue: () => {
-		if (!props.product.attributes.Price_Original) return null
+		if (!props.product.price) return null
 
 		const saving =
-			100 -
-			Math.round(
-				(props.product.attributes.Price_Current /
-					props.product.attributes.Price_Original) *
-					100
-			)
+			100 - Math.round((props.product.price / props.product.price) * 100)
 		return saving + '%'
 	},
 	img: () => {
-		return props.product.attributes.Image.data
-			? props.product.attributes.Image.data[0].attributes.url
+		return props.product.image
+			? props.product.image
 			: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659123319/Groceyish/Image_Placeholder.webp'
 	}
 }
 </script>
 
 <template>
-	<NuxtLink class="product-card" :to="`/products/${product.id}`">
+	<NuxtLink class="product-card" :to="`/products/${product._id}`">
 		<!-- Tags -->
 		<BaseTag v-if="productData.isBestDeal" class="tag tag--best-deal">
 			Best Deal

@@ -8,25 +8,20 @@ const props = defineProps({
 })
 
 const productData = {
-	name: props.product.attributes.Name,
-	brand: props.product.attributes.Brand,
-	category: props.product.attributes.Category.data.attributes.Name,
-	priceCurrent: `${props.product.attributes.Price_Current} ${props.product.attributes.Price_Currency}`,
-	priceOriginal: `${props.product.attributes.Price_Original} ${props.product.attributes.Price_Currency}`,
-	ratingValue: props.product.attributes.Rating_Value,
-	ratingCount: props.product.attributes.Rating_Users,
-	isBestDeal: props.product.attributes.isBestDeal,
-	isSaving: props.product.attributes.Price_Original,
+	name: props.product.name,
+	brand: props.product.name,
+	category: props.product.category.name,
+	priceCurrent: `${props.product.price} `,
+	priceOriginal: `${props.product.price} `,
+	ratingValue: props.product.price / 100,
+	ratingCount: props.product.price / 5,
+	isBestDeal: true,
+	isSaving: props.product.price,
 	savingValue: () => {
-		if (!props.product.attributes.Price_Original) return null
+		if (!props.product.price) return null
 
 		const saving =
-			100 -
-			Math.round(
-				(props.product.attributes.Price_Current /
-					props.product.attributes.Price_Original) *
-					100
-			)
+			100 - Math.round((props.product.price / props.product.price) * 100)
 		return saving + '%'
 	}
 }
@@ -111,10 +106,10 @@ const addToCart = () => {
 			</form>
 		</div>
 
-		<div class="banner bg-banner-1">
+		<div class="banner bg-banner-3">
 			<BaseTag class="bg-yellow-100 text-white">Free Delivery</BaseTag>
-			<h3>Free Delivery over 350 EGP</h3>
-			<p>Shop 350 EGP product and get free delivery anywhre.</p>
+			<h3>.</h3>
+			<p>.</p>
 			<button class="app-button bg-yellow-100">
 				Shop Now <span i-bx-right-arrow-alt></span>
 			</button>
@@ -171,8 +166,8 @@ const addToCart = () => {
 }
 
 .banner {
-	@apply mx-auto w-full max-w-[600px] py-8 px-12;
-	@apply flex flex-col justify-center gap-4;
+	@apply mx-auto w-full max-w-[600px] py-14 px-12;
+	@apply flex flex-col justify-center gap-10;
 	@apply rounded-lg bg-cover bg-no-repeat shadow-lg;
 
 	> * {

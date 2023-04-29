@@ -2,19 +2,19 @@
 	<section>
 		<Swiper class="intro-swiper" :swiper-options="swiperOptions">
 			<SwiperSlide class="intro-slide bg-intro-slide-1">
-				<h1>Bring nature into your home</h1>
-				<p>Get everything you need with a single click!</p>
+				<h1></h1>
+				<p>!</p>
 			</SwiperSlide>
 
 			<SwiperSlide class="intro-slide bg-intro-slide-2">
-				<h1>Don't miss our daily amazing deals</h1>
-				<p>Sign up for the weekly newsletter</p>
-				<!-- <AppNewsletter class="justify-center lg:justify-start" /> -->
+				<h1></h1>
+				<p></p>
 			</SwiperSlide>
 
 			<SwiperSlide class="intro-slide bg-intro-slide-3">
-				<h1>Fresh Vegetables, Big Discount</h1>
-				<p>Save up to 60% off on your first order</p>
+				<h1>.</h1>
+				<p>.</p>
+				<h1>.</h1>
 			</SwiperSlide>
 		</Swiper>
 	</section>
@@ -39,7 +39,7 @@ const swiperOptions = {
 
 	.intro-slide {
 		@apply bg-cover bg-no-repeat py-32 px-20;
-		@apply flex h-auto flex-col items-center justify-center gap-4 text-center;
+		@apply flex h-auto flex-col items-center justify-center gap-12 text-center;
 		@apply lg:items-start lg:text-start;
 
 		> * {

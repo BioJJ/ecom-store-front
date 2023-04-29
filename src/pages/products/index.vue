@@ -1,12 +1,12 @@
 <script setup>
-useHead({ title: `Groceyish - Products` })
+useHead({ title: `ECOM-STORE - Products` })
 </script>
 
 <template>
 	<main>
 		<ProductGallery />
 		<SectionBanners />
-		<!-- <SectionCategories /> -->
+		<SectionCategories />
 		<SectionPerks />
 	</main>
 </template>
