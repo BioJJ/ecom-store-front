@@ -7,50 +7,30 @@ const props = defineProps({
 	}
 })
 
-// const productData = {
-//   name: props.product.attributes.Name,
-//   brand: props.product.attributes.Brand,
-//   category: props.product.attributes.Category.data.attributes.Name,
-//   priceCurrent: `${props.product.attributes.Price_Current} ${props.product.attributes.Price_Currency}`,
-//   priceOriginal: `${props.product.attributes.Price_Original} ${props.product.attributes.Price_Currency}`,
-//   ratingValue: props.product.attributes.Rating_Value,
-//   ratingCount: props.product.attributes.Rating_Users,
-//   isBestDeal: props.product.attributes.isBestDeal,
-//   isSaving: props.product.attributes.Price_Original,
-//   savingValue: () => {
-//     if (!props.product.attributes.Price_Original) return null;
-
-//     const saving =
-//       100 -
-//       Math.round(
-//         (props.product.attributes.Price_Current /
-//           props.product.attributes.Price_Original) *
-//           100
-//       );
-//     return saving + '%';
-//   },
-// };
-
 const productData = {
-	name: 'Automatic Powder Lavender Scent Multicolour - 2.5 Kg',
-	brand: 'Tide',
-	category: 'Laundry',
-	priceCurrent: `80 80`,
-	priceOriginal: 96,
-	ratingValue: 4.8,
-	ratingCount: 762,
-	isBestDeal: true,
-	isSaving: 96,
+	name: props.product.attributes.Name,
+	brand: props.product.attributes.Brand,
+	category: props.product.attributes.Category.data.attributes.Name,
+	priceCurrent: `${props.product.attributes.Price_Current} ${props.product.attributes.Price_Currency}`,
+	priceOriginal: `${props.product.attributes.Price_Original} ${props.product.attributes.Price_Currency}`,
+	ratingValue: props.product.attributes.Rating_Value,
+	ratingCount: props.product.attributes.Rating_Users,
+	isBestDeal: props.product.attributes.isBestDeal,
+	isSaving: props.product.attributes.Price_Original,
 	savingValue: () => {
-		// if (!props.product.attributes.Price_Original) return null
+		if (!props.product.attributes.Price_Original) return null
 
-		const saving = 100 - Math.round((80 / 96) * 100)
+		const saving =
+			100 -
+			Math.round(
+				(props.product.attributes.Price_Current /
+					props.product.attributes.Price_Original) *
+					100
+			)
 		return saving + '%'
-	},
-	img: () => {
-		return 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117789/Groceyish/Strapi/small_N52757572_A_4_45e32a2edf_dab3664874.webp'
 	}
 }
+
 // Quantity
 const quantity = ref(1)
 

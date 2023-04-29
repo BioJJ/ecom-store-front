@@ -133,7 +133,7 @@ const closeMenu = () => {
 						</li>
 					</ul>
 
-					<p class="font-medium">© Groceyish 2022. All Rights Reserved.</p>
+					<p class="font-medium">© BioJJ 2022. All Rights Reserved.</p>
 				</div>
 			</section>
 

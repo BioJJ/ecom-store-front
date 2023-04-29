@@ -10,7 +10,7 @@ const updateCategoryID = (newCategoryID) => {
 	<main>
 		<ProductDetails @category-id-change="updateCategoryID" />
 		<!-- <SectionRelatedProducts :category-id="categoryID" /> -->
-		<!-- <SectionCategories /> -->
+		<SectionCategories />
 		<SectionPerks />
 	</main>
 </template>

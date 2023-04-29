@@ -1,7 +1,7 @@
 <template>
 	<Slider />
 
-	<!-- <Products /> -->
+	<SectionCategories />
 	<SectionFeatured />
 	<SectionBanners />
 	<!-- <About /> -->

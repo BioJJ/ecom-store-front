@@ -1,5 +1,5 @@
 <script setup>
-useHead({ title: `Groceyish - Cart` })
+useHead({ title: `ECOM-STORE - Cart` })
 </script>
 
 <template>

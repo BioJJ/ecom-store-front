@@ -11,261 +11,303 @@ const swiperOptions = {
 // Strapi
 const isLoading = ref(true)
 const productDetails = reactive({
-	id: 3,
+	id: 22,
 	attributes: {
-		Name: 'Automatic Powder Lavender Scent Multicolour - 2.5 Kg',
-		createdAt: '2022-07-29T18:04:57.710Z',
-		updatedAt: '2022-08-01T19:27:14.529Z',
-		publishedAt: '2022-07-29T18:04:58.724Z',
-		Brand: 'Tide',
-		Price_Current: 80,
-		Price_Original: 96,
+		Name: 'Gold Instant Coffee - 200g',
+		createdAt: '2022-07-29T19:00:15.167Z',
+		updatedAt: '2022-07-29T19:00:15.876Z',
+		publishedAt: '2022-07-29T19:00:15.873Z',
+		Brand: 'Nescafe',
+		Price_Current: 167.5,
+		Price_Original: 193,
 		Price_Currency: 'EGP',
-		Rating_Value: 4.8,
-		Rating_Users: 762,
-		isFeatured: false,
-		isBestDeal: true,
+		Rating_Value: 5,
+		Rating_Users: 573,
+		isFeatured: true,
+		isBestDeal: false,
 		isDailyBestSell: false,
 		Image: {
 			data: [
 				{
-					id: 118,
+					id: 74,
 					attributes: {
-						name: 'N52757572_A_4_45e32a2edf.webp',
-						alternativeText: 'N52757572_A_4_45e32a2edf.webp',
-						caption: 'N52757572_A_4_45e32a2edf.webp',
-						width: 400,
-						height: 546,
+						name: '71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9.webp',
+						alternativeText: '71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9.webp',
+						caption: '71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9.webp',
+						width: 628,
+						height: 1500,
 						formats: {
+							large: {
+								ext: '.webp',
+								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117731/Groceyish/Strapi/large_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6.webp',
+								hash: 'large_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6',
+								mime: 'image/webp',
+								name: 'large_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9.webp',
+								path: null,
+								size: 58.15,
+								width: 419,
+								height: 1000,
+								provider_metadata: {
+									public_id:
+										'Groceyish/Strapi/large_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6',
+									resource_type: 'image'
+								}
+							},
 							small: {
 								ext: '.webp',
-								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117789/Groceyish/Strapi/small_N52757572_A_4_45e32a2edf_dab3664874.webp',
-								hash: 'small_N52757572_A_4_45e32a2edf_dab3664874',
+								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117732/Groceyish/Strapi/small_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6.webp',
+								hash: 'small_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6',
 								mime: 'image/webp',
-								name: 'small_N52757572_A_4_45e32a2edf.webp',
+								name: 'small_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9.webp',
 								path: null,
-								size: 19.41,
-								width: 366,
+								size: 20.87,
+								width: 209,
 								height: 500,
 								provider_metadata: {
 									public_id:
-										'Groceyish/Strapi/small_N52757572_A_4_45e32a2edf_dab3664874',
+										'Groceyish/Strapi/small_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6',
+									resource_type: 'image'
+								}
+							},
+							medium: {
+								ext: '.webp',
+								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117731/Groceyish/Strapi/medium_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6.webp',
+								hash: 'medium_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6',
+								mime: 'image/webp',
+								name: 'medium_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9.webp',
+								path: null,
+								size: 40.7,
+								width: 314,
+								height: 750,
+								provider_metadata: {
+									public_id:
+										'Groceyish/Strapi/medium_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6',
 									resource_type: 'image'
 								}
 							},
 							thumbnail: {
 								ext: '.webp',
-								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117788/Groceyish/Strapi/thumbnail_N52757572_A_4_45e32a2edf_dab3664874.webp',
-								hash: 'thumbnail_N52757572_A_4_45e32a2edf_dab3664874',
+								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117730/Groceyish/Strapi/thumbnail_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6.webp',
+								hash: 'thumbnail_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6',
 								mime: 'image/webp',
-								name: 'thumbnail_N52757572_A_4_45e32a2edf.webp',
+								name: 'thumbnail_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9.webp',
 								path: null,
-								size: 3.96,
-								width: 114,
+								size: 3.4,
+								width: 65,
 								height: 156,
 								provider_metadata: {
 									public_id:
-										'Groceyish/Strapi/thumbnail_N52757572_A_4_45e32a2edf_dab3664874',
+										'Groceyish/Strapi/thumbnail_71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6',
 									resource_type: 'image'
 								}
 							}
 						},
-						hash: 'N52757572_A_4_45e32a2edf_dab3664874',
+						hash: '71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6',
 						ext: '.webp',
 						mime: 'image/webp',
-						size: 24.95,
-						url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117788/Groceyish/Strapi/N52757572_A_4_45e32a2edf_dab3664874.webp',
+						size: 109.86,
+						url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117730/Groceyish/Strapi/71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6.webp',
 						previewUrl: null,
 						provider: 'cloudinary',
 						provider_metadata: {
-							public_id: 'Groceyish/Strapi/N52757572_A_4_45e32a2edf_dab3664874',
+							public_id:
+								'Groceyish/Strapi/71z_ASZ_0_Uh_WL_AC_SL_1500_ab3b635dd9_d34ddaa0b6',
 							resource_type: 'image'
 						},
-						createdAt: '2022-07-29T18:03:09.736Z',
-						updatedAt: '2022-07-29T18:03:09.736Z'
+						createdAt: '2022-07-29T18:02:12.752Z',
+						updatedAt: '2022-07-29T18:02:12.752Z'
 					}
 				},
 				{
-					id: 116,
+					id: 82,
 					attributes: {
-						name: 'N52757572_A_3_633ecc4763.webp',
-						alternativeText: 'N52757572_A_3_633ecc4763.webp',
-						caption: 'N52757572_A_3_633ecc4763.webp',
-						width: 400,
-						height: 546,
+						name: '81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43.webp',
+						alternativeText: '81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43.webp',
+						caption: '81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43.webp',
+						width: 1500,
+						height: 1500,
 						formats: {
+							large: {
+								ext: '.webp',
+								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117749/Groceyish/Strapi/large_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05.webp',
+								hash: 'large_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05',
+								mime: 'image/webp',
+								name: 'large_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43.webp',
+								path: null,
+								size: 62.91,
+								width: 1000,
+								height: 1000,
+								provider_metadata: {
+									public_id:
+										'Groceyish/Strapi/large_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05',
+									resource_type: 'image'
+								}
+							},
 							small: {
 								ext: '.webp',
-								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117789/Groceyish/Strapi/small_N52757572_A_3_633ecc4763_18acac16bd.webp',
-								hash: 'small_N52757572_A_3_633ecc4763_18acac16bd',
+								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117750/Groceyish/Strapi/small_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05.webp',
+								hash: 'small_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05',
 								mime: 'image/webp',
-								name: 'small_N52757572_A_3_633ecc4763.webp',
+								name: 'small_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43.webp',
 								path: null,
-								size: 16.77,
-								width: 366,
+								size: 24.68,
+								width: 500,
 								height: 500,
 								provider_metadata: {
 									public_id:
-										'Groceyish/Strapi/small_N52757572_A_3_633ecc4763_18acac16bd',
+										'Groceyish/Strapi/small_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05',
+									resource_type: 'image'
+								}
+							},
+							medium: {
+								ext: '.webp',
+								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117750/Groceyish/Strapi/medium_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05.webp',
+								hash: 'medium_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05',
+								mime: 'image/webp',
+								name: 'medium_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43.webp',
+								path: null,
+								size: 44.18,
+								width: 750,
+								height: 750,
+								provider_metadata: {
+									public_id:
+										'Groceyish/Strapi/medium_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05',
 									resource_type: 'image'
 								}
 							},
 							thumbnail: {
 								ext: '.webp',
-								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117788/Groceyish/Strapi/thumbnail_N52757572_A_3_633ecc4763_18acac16bd.webp',
-								hash: 'thumbnail_N52757572_A_3_633ecc4763_18acac16bd',
+								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117749/Groceyish/Strapi/thumbnail_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05.webp',
+								hash: 'thumbnail_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05',
 								mime: 'image/webp',
-								name: 'thumbnail_N52757572_A_3_633ecc4763.webp',
+								name: 'thumbnail_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43.webp',
 								path: null,
-								size: 3.45,
-								width: 114,
+								size: 3.73,
+								width: 156,
 								height: 156,
 								provider_metadata: {
 									public_id:
-										'Groceyish/Strapi/thumbnail_N52757572_A_3_633ecc4763_18acac16bd',
+										'Groceyish/Strapi/thumbnail_81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05',
 									resource_type: 'image'
 								}
 							}
 						},
-						hash: 'N52757572_A_3_633ecc4763_18acac16bd',
+						hash: '81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05',
 						ext: '.webp',
 						mime: 'image/webp',
-						size: 21.4,
-						url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117788/Groceyish/Strapi/N52757572_A_3_633ecc4763_18acac16bd.webp',
+						size: 118.44,
+						url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117748/Groceyish/Strapi/81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05.webp',
 						previewUrl: null,
 						provider: 'cloudinary',
 						provider_metadata: {
-							public_id: 'Groceyish/Strapi/N52757572_A_3_633ecc4763_18acac16bd',
+							public_id:
+								'Groceyish/Strapi/81x_ZA_Xw_L_Hj_L_AC_SL_1500_53f43aad43_be0300fe05',
 							resource_type: 'image'
 						},
-						createdAt: '2022-07-29T18:03:09.379Z',
-						updatedAt: '2022-07-29T18:03:09.379Z'
+						createdAt: '2022-07-29T18:02:31.561Z',
+						updatedAt: '2022-07-29T18:02:31.561Z'
 					}
 				},
 				{
-					id: 115,
+					id: 81,
 					attributes: {
-						name: 'N52757572_A_2_5df86b6d79.webp',
-						alternativeText: 'N52757572_A_2_5df86b6d79.webp',
-						caption: 'N52757572_A_2_5df86b6d79.webp',
-						width: 400,
-						height: 546,
+						name: '81l_D9v_G1_F3_L_AC_SL_1500_945224dc39.webp',
+						alternativeText: '81l_D9v_G1_F3_L_AC_SL_1500_945224dc39.webp',
+						caption: '81l_D9v_G1_F3_L_AC_SL_1500_945224dc39.webp',
+						width: 621,
+						height: 1500,
 						formats: {
+							large: {
+								ext: '.webp',
+								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117748/Groceyish/Strapi/large_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914.webp',
+								hash: 'large_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914',
+								mime: 'image/webp',
+								name: 'large_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39.webp',
+								path: null,
+								size: 144.85,
+								width: 414,
+								height: 1000,
+								provider_metadata: {
+									public_id:
+										'Groceyish/Strapi/large_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914',
+									resource_type: 'image'
+								}
+							},
 							small: {
 								ext: '.webp',
-								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117788/Groceyish/Strapi/small_N52757572_A_2_5df86b6d79_66fe11a0a2.webp',
-								hash: 'small_N52757572_A_2_5df86b6d79_66fe11a0a2',
+								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117749/Groceyish/Strapi/small_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914.webp',
+								hash: 'small_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914',
 								mime: 'image/webp',
-								name: 'small_N52757572_A_2_5df86b6d79.webp',
+								name: 'small_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39.webp',
 								path: null,
-								size: 20.17,
-								width: 366,
+								size: 40.47,
+								width: 207,
 								height: 500,
 								provider_metadata: {
 									public_id:
-										'Groceyish/Strapi/small_N52757572_A_2_5df86b6d79_66fe11a0a2',
+										'Groceyish/Strapi/small_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914',
+									resource_type: 'image'
+								}
+							},
+							medium: {
+								ext: '.webp',
+								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117748/Groceyish/Strapi/medium_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914.webp',
+								hash: 'medium_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914',
+								mime: 'image/webp',
+								name: 'medium_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39.webp',
+								path: null,
+								size: 88.76,
+								width: 310,
+								height: 750,
+								provider_metadata: {
+									public_id:
+										'Groceyish/Strapi/medium_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914',
 									resource_type: 'image'
 								}
 							},
 							thumbnail: {
 								ext: '.webp',
-								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117787/Groceyish/Strapi/thumbnail_N52757572_A_2_5df86b6d79_66fe11a0a2.webp',
-								hash: 'thumbnail_N52757572_A_2_5df86b6d79_66fe11a0a2',
+								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117747/Groceyish/Strapi/thumbnail_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914.webp',
+								hash: 'thumbnail_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914',
 								mime: 'image/webp',
-								name: 'thumbnail_N52757572_A_2_5df86b6d79.webp',
+								name: 'thumbnail_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39.webp',
 								path: null,
-								size: 3.76,
-								width: 114,
+								size: 3.55,
+								width: 65,
 								height: 156,
 								provider_metadata: {
 									public_id:
-										'Groceyish/Strapi/thumbnail_N52757572_A_2_5df86b6d79_66fe11a0a2',
+										'Groceyish/Strapi/thumbnail_81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914',
 									resource_type: 'image'
 								}
 							}
 						},
-						hash: 'N52757572_A_2_5df86b6d79_66fe11a0a2',
+						hash: '81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914',
 						ext: '.webp',
 						mime: 'image/webp',
-						size: 26.44,
-						url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117787/Groceyish/Strapi/N52757572_A_2_5df86b6d79_66fe11a0a2.webp',
+						size: 308.1,
+						url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117747/Groceyish/Strapi/81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914.webp',
 						previewUrl: null,
 						provider: 'cloudinary',
 						provider_metadata: {
-							public_id: 'Groceyish/Strapi/N52757572_A_2_5df86b6d79_66fe11a0a2',
+							public_id:
+								'Groceyish/Strapi/81l_D9v_G1_F3_L_AC_SL_1500_945224dc39_368cecd914',
 							resource_type: 'image'
 						},
-						createdAt: '2022-07-29T18:03:08.402Z',
-						updatedAt: '2022-07-29T18:03:08.402Z'
-					}
-				},
-				{
-					id: 113,
-					attributes: {
-						name: 'N52757572_A_1_98bf114b70.webp',
-						alternativeText: 'N52757572_A_1_98bf114b70.webp',
-						caption: 'N52757572_A_1_98bf114b70.webp',
-						width: 400,
-						height: 546,
-						formats: {
-							small: {
-								ext: '.webp',
-								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117786/Groceyish/Strapi/small_N52757572_A_1_98bf114b70_ed7b24cdff.webp',
-								hash: 'small_N52757572_A_1_98bf114b70_ed7b24cdff',
-								mime: 'image/webp',
-								name: 'small_N52757572_A_1_98bf114b70.webp',
-								path: null,
-								size: 18.92,
-								width: 366,
-								height: 500,
-								provider_metadata: {
-									public_id:
-										'Groceyish/Strapi/small_N52757572_A_1_98bf114b70_ed7b24cdff',
-									resource_type: 'image'
-								}
-							},
-							thumbnail: {
-								ext: '.webp',
-								url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117786/Groceyish/Strapi/thumbnail_N52757572_A_1_98bf114b70_ed7b24cdff.webp',
-								hash: 'thumbnail_N52757572_A_1_98bf114b70_ed7b24cdff',
-								mime: 'image/webp',
-								name: 'thumbnail_N52757572_A_1_98bf114b70.webp',
-								path: null,
-								size: 3.72,
-								width: 114,
-								height: 156,
-								provider_metadata: {
-									public_id:
-										'Groceyish/Strapi/thumbnail_N52757572_A_1_98bf114b70_ed7b24cdff',
-									resource_type: 'image'
-								}
-							}
-						},
-						hash: 'N52757572_A_1_98bf114b70_ed7b24cdff',
-						ext: '.webp',
-						mime: 'image/webp',
-						size: 24.23,
-						url: 'https://res.cloudinary.com/cloud-m98/image/upload/v1659117785/Groceyish/Strapi/N52757572_A_1_98bf114b70_ed7b24cdff.webp',
-						previewUrl: null,
-						provider: 'cloudinary',
-						provider_metadata: {
-							public_id: 'Groceyish/Strapi/N52757572_A_1_98bf114b70_ed7b24cdff',
-							resource_type: 'image'
-						},
-						createdAt: '2022-07-29T18:03:07.286Z',
-						updatedAt: '2022-07-29T18:03:07.286Z'
+						createdAt: '2022-07-29T18:02:29.789Z',
+						updatedAt: '2022-07-29T18:02:29.789Z'
 					}
 				}
 			]
 		},
 		Category: {
 			data: {
-				id: 9,
+				id: 1,
 				attributes: {
-					Name: 'Laundry',
-					createdAt: '2022-07-29T17:48:52.650Z',
-					updatedAt: '2022-07-29T17:48:53.392Z',
-					publishedAt: '2022-07-29T17:48:53.389Z'
+					Name: 'Coffee & Tea',
+					createdAt: '2022-07-29T17:35:22.535Z',
+					updatedAt: '2022-07-29T17:35:23.959Z',
+					publishedAt: '2022-07-29T17:35:23.955Z'
 				}
 			}
 		}
