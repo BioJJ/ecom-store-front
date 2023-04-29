@@ -3,8 +3,8 @@
 		<div class="wrapper">
 			<div class="banner bg-banner-1">
 				<BaseTag class="bg-yellow-100 text-white">Free Delivery</BaseTag>
-				<h3>Free Delivery over 350 EGP</h3>
-				<p>Shop 350 EGP product and get free delivery anywhre.</p>
+				<h3>.</h3>
+				<p>.</p>
 				<button class="app-button bg-yellow-100">
 					Shop Now <span i-bx-right-arrow-alt></span>
 				</button>
@@ -12,8 +12,8 @@
 
 			<div class="banner bg-banner-2">
 				<BaseTag class="bg-green-200 text-white">Best Deal</BaseTag>
-				<h3>Organic Food</h3>
-				<p>Save up to 60% off on your first order</p>
+				<h3>.</h3>
+				<p>.</p>
 				<button class="app-button">
 					Order Now <span i-bx-right-arrow-alt></span>
 				</button>
